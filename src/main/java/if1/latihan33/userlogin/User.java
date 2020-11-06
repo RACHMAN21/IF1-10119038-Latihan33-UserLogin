@@ -20,7 +20,7 @@ public class User {
     private boolean statusAkun;
     
     private boolean cekAkun(String parUserName, String parPassword) {
-        if(USERNAME == parUserName && PASSWORD == parPassword) {
+        if(USERNAME.equals(parUserName) && PASSWORD.equals(parPassword)) {
             statusAkun = true;
         } else {
             statusAkun = false;
